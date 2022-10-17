@@ -1,0 +1,30 @@
+.address-list {
+    display: block;
+}
+
+.address {
+    color: var(--primary-white-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    text-decoration: none;
+}
+
+.address-list__item {
+    margin-bottom: 9px;
+
+    &:nth-child(3n) {
+            margin-bottom: 0;
+        }
+}
+
+
+.address-list__contacts {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    text-decoration: none;
+}

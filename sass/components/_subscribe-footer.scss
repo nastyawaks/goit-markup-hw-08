@@ -1,0 +1,31 @@
+.mailing-form {
+    margin-left: auto;
+}
+
+.form-box {
+    display: flex;
+}
+
+.mail-input {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    background-color: var(--primary-footer-color);
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.mailing-btn {
+    margin-left: 12px;
+    justify-content: center;
+    display: flex;
+}
+
+.icon-mailing {
+    margin-left: 10px;
+}

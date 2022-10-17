@@ -1,0 +1,33 @@
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.social__item {
+    display: inline-flex;
+    margin-right: 10px;
+
+    &:nth-child(4n) {
+    margin-right: 0;
+}
+}
+
+.social__link {
+    display: inline-flex;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    justify-content: center;
+    border-radius: 50%;
+    fill: var(--client-color);
+    transition: background-color var(--animation-time) var(--animation-cubic),
+        fill var(--animation-time) var(--animation-cubic);
+
+        &:hover,
+            &:focus {
+                background-color: var(--link-color);
+                fill: var(--primary-white-color);
+            }
+}
+

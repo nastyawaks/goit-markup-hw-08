@@ -1,0 +1,16 @@
+.logo-link {
+    
+    display: inline-block;
+    text-decoration: none;
+    font-family: $font-logo;
+    color: var(--primary-black-color);
+    font-size: 26px;
+    line-height: 1.2;
+
+}
+
+.logo-link__first {
+    color: var(--link-color);
+}
+
+

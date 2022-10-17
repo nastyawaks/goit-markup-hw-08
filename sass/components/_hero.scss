@@ -1,0 +1,61 @@
+.hero {
+    background-color: var(--primary-footer-color);
+    text-align: center;
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/bck-team.jpeg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero__title {
+    margin: auto;
+    margin-bottom: 30px;
+
+    color: var(--primary-white-color);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.5;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    max-width: 696px;
+}
+
+.button {
+    border-radius: 4px;
+    padding: 10px 32px;
+    border: none;
+
+    color: var(--primary-white-color);
+    background-color: var(--link-color);
+
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    text-align: center;
+
+    transition: color var(--animation-time) var(--animation-cubic),
+        background-color var(--animation-time) var(--animation-cubic);
+
+
+        &:hover,
+        &:focus {color: var(--primary-white-color);
+            background-color: var(--link-color);}
+}

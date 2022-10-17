@@ -1,0 +1,19 @@
+footer {
+    background-color: var(--primary-footer-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.logo-link--footer {
+    margin-bottom: 20px;
+}
+
+.logo-link__second--white {
+    color: var(--primary-white-color);
+    font-family: Raleway, sans-serif;
+}
