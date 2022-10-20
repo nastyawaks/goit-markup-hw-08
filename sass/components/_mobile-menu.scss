@@ -40,8 +40,6 @@
   z-index: 999;
   transform: translateX(100%);
   transition: transform var(--animation-time) var(--animation-cubic);
-
-
   &{
     @media screen and (min-width: 768px) {
     display: none;
