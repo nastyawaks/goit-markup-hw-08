@@ -1,43 +1,87 @@
 .contacts {
+  display: none;
+
+  @media screen and (min-width: 768px) {
     display: flex;
-    margin-left: auto;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 30px;
+  }
 }
 
-.contacts__item {
-    margin-left: 50px;
-}
+// .contacts {
+//     display: flex;
+//     margin-left: auto;
+// }
+
+// .contacts__item {
+//     margin-left: 50px;
+// }
 
 .contacts__link {
-    display: flex;
+  display: flex;
+  color: var(--primary-text-color);
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  font-weight: 500;
 
-    padding-top: 32px;
-    padding-bottom: 32px;
 
-    color: var(--primary-text-color);
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    text-decoration: none;
+  text-decoration: none;
     align-items: center;
-    transition: color var(--animation-time) var(--animation-cubic),
-        fill var(--animation-time) var(--animation-cubic);
 
-        &:hover,
-        &:focus {
-            color: var(--link-color);
-                fill: var(--link-color);
-        }
+  transition: color var(--animation-time) var(--animation-cubic),
+    fill var(--animation-time) var(--animation-cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--link-color);
+    fill: var(--link-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
+
+
 
 .contacts__icon {
-    margin-right: 10px;
-    fill: currentColor;
+  margin-right: 10px;
+  fill: currentColor;
 
-    &:hover,
-    &:focus {
-        fill: var(--link-color);
-    }
+  &:hover,
+  &:focus {
+    fill: var(--link-color);
+  }
 }
+
+// .contacts__link {
+//     display: flex;
+
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+
+//     color: var(--primary-text-color);
+
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.2;
+//     letter-spacing: 0.02em;
+//     text-decoration: none;
+//     align-items: center;
+//     transition: color var(--animation-time) var(--animation-cubic),
+//         fill var(--animation-time) var(--animation-cubic);
+
+//         &:hover,
+//         &:focus {
+//             color: var(--link-color);
+//                 fill: var(--link-color);
+//         }
+// }
+
 

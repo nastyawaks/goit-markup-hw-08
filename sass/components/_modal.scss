@@ -34,6 +34,23 @@
     border-radius: 4px;
 
     transition: transform var(--animation-time) var(--animation-cubic);
+
+    @media screen and (max-width: 479px) {
+    width: calc(100vw - 30px);
+  }
+
+  @media screen and (min-width: 480px) {
+    min-width: 450px;
+    min-height: 609px;
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
+  }
+
+
 }
 
 .modal-button {

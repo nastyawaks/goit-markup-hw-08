@@ -1,5 +1,6 @@
-.footer-links__title,
-.footer-form__title {
+// .footer-links__title,
+.footer__title,
+.form-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
@@ -10,10 +11,11 @@
     margin-bottom: 20px;
 }
 
-.footer-icons {
+.footer-icons{
     display: flex;
     align-items: center;
 }
+
 
 .footer-icons__item {
     margin-right: 10px;
@@ -24,10 +26,10 @@
 }
 
 
-.footer-links {
-    margin-left: 70px;
-    fill: var(--primary-white-color);
-}
+// .footer-links {
+//     margin-left: 70px;
+//     fill: var(--primary-white-color);
+// }
 
 .footer-icon__link {
     display: inline-flex;

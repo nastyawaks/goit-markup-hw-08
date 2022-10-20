@@ -1,0 +1,138 @@
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  position: absolute;
+    top: 10px;
+    right: 15px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    fill: var(--link-color);
+  }
+}
+
+.menu-toggle__icon {
+  transition: fill var(--animation-time) var(--animation-cubic);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: #fff;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform var(--animation-time) var(--animation-cubic);
+
+
+  &{
+    @media screen and (min-width: 768px) {
+    display: none;
+  }
+  }
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.menu-container__wrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.mob-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex-grow: 1;
+}
+
+.mob-menu__link {
+  padding-bottom: 5px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  transition: color var(--animation-time) var(--animation-cubic);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--link-color);
+  }
+
+  &--current {
+    color: var(--link-color);
+  }
+}
+
+.mob-contacts {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 32px;
+  margin-bottom: 64px;
+  margin-top: auto;
+}
+
+// .mob-contacts__item {
+
+// }
+
+.mob-contact__link {
+    font-size: 34px;
+    line-height: 1.17;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: color var(--animation-time) var(--animation-cubic);
+
+    &:hover,
+    &:focus {
+        color: var(--link-color);
+    }
+
+
+}
+
+
+.mob-socials {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+.mob-socials__item:not(:last-child) {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mob-socials__link {
+    font-size: 18px;
+    line-height: 1.22;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--link-color);
+    text-decoration: none;
+}

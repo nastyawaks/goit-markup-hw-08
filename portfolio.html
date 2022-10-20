@@ -22,9 +22,16 @@
                 <a href="/" class="logo-link">
                     <span class="logo-link__first">Web</span><span>Studio</span>
                 </a>
-                <ul class="menu list ">
-                    <li class="menu__item"><a href="./index.html" class="menu__link">Студія</a></li>
-                    <li class="menu__item"><a href="./portfolio.html" class="menu__link menu__link--current">Портфоліо</a></li>
+    
+                <button type="button" class="menu-toggle js-open-menu" aria-expanded="true" aria-controls="mobile-menu">
+                    <svg class="menu-toggle__icon" width="40" height="40">
+                        <use class="menu-toggle__menu" href="./images/sprite.svg#icon-menu"></use>
+                    </svg>
+                </button>
+    
+                <ul class="menu list">
+                    <li class="menu__item"><a href="./index.html" class="menu__link menu__link--current">Студія</a></li>
+                    <li class="menu__item"><a href="./portfolio.html" class="menu__link">Портфоліо</a></li>
                     <li class="menu__item"><a href="" class="menu__link">Контакти</a></li>
                 </ul>
             </nav>
@@ -61,7 +68,16 @@
                     <li class="portfolio__item">
                         <a href="" class="portfolio__project-link">
                             <div class="portfolio-thumb">
-                                <img src="./images/laptop-hryak.jpeg" alt="Веб-сайт" width="370">
+                                <img srcset="
+                                images/hryak-354.jpeg  354w,
+                                images/hryak-370.jpeg  370w,
+                                images/hryak-450.jpeg  450w,
+                                images/hryak-708.jpeg  708w,
+                                images/hryak-740.jpeg  740w,
+                                images/hryak-900.jpeg  900w
+                                "
+                                src="images/hryak-354.jpeg" alt="Веб-сайт" 
+                                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px">
                                 <div class="portfolio-thumb__text">
                                     <p class="portfolio-thumb__desc">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем функціоналу та сервісів.
@@ -78,7 +94,16 @@
                     <li class="portfolio__item">
                         <a href="" class="portfolio__project-link">
                             <div class="portfolio-thumb">
-                                <img src="./images/nba.jpeg" alt="Дизайн" width="370">
+                                <img srcset="
+                                images/nba-354.jpeg  354w,
+                                images/nba-370.jpeg  370w,
+                                images/nba-450.jpeg  450w,
+                                images/nba-708.jpeg  708w,
+                                images/nba-740.jpeg  740w,
+                                images/nba-900.jpeg  900w
+                                "
+                                src=".images/nba-354.jpeg" alt="Дизайн" 
+                                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px">
                                 <div class="portfolio-thumb__text">
                                     <p class="portfolio-thumb__desc">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем функціоналу та сервісів.
@@ -95,7 +120,16 @@
                     <li class="portfolio__item">
                         <a href="" class="portfolio__project-link">
                             <div class="portfolio-thumb">
-                                <img src="./images/fish.jpeg" alt="Додаток" width="370">
+                                <img srcset="
+                                images/fish-354.jpeg  354w,
+                                images/fish-370.jpeg  370w,
+                                images/fish-450.jpeg  450w,
+                                images/fish-708.jpeg  708w,
+                                images/fish-740.jpeg  740w,
+                                images/fish-900.jpeg  900w
+                                "
+                                src="images/fish-354.jpeg" alt="Додаток" 
+                                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px">
                                 <div class="portfolio-thumb__text">
                                     <p class="portfolio-thumb__desc">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем функціоналу та сервісів.
@@ -112,7 +146,16 @@
                     <li class="portfolio__item">
                         <a href="" class="portfolio__project-link">
                             <div class="portfolio-thumb">
-                                <img src="./images/headphones.jpeg" alt="Маркетинг" width="370">
+                                <img srcset="
+                                images/headp-354.jpeg  354w,
+                                images/headp-370.jpeg  370w,
+                                images/headp-450.jpeg  450w,
+                                images/headp-708.jpeg  708w,
+                                images/headp-740.jpeg  740w,
+                                images/headp-900.jpeg  900w
+                                "
+                                 src="images/headp-354.jpeg" alt="Маркетинг"
+                                 sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px">
                                 <div class="portfolio-thumb__text">
                                     <p class="portfolio-thumb__desc">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем функціоналу та сервісів.
@@ -129,7 +172,16 @@
                     <li class="portfolio__item">
                         <a href="" class="portfolio__project-link">
                             <div class="portfolio-thumb">
-                                <img src="./images/boxes.jpeg" alt="Додаток" width="370">
+                                <img srcset="
+                                images/boxed-354.jpeg  354w,
+                                images/boxed-370.jpeg  370w,
+                                images/boxed-450.jpeg  450w,
+                                images/boxed-708.jpeg  708w,
+                                images/boxed-740.jpeg  740w,
+                                images/boxed-900.jpeg  900w
+                                "
+                                src="images/boxed-354.jpeg" alt="Додаток" 
+                                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px">
                                 <div class="portfolio-thumb__text">
                                     <p class="portfolio-thumb__desc">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем функціоналу та сервісів.
@@ -147,7 +199,16 @@
                         <a href="" class="portfolio__project-link">
 
                             <div class="portfolio-thumb">
-                                <img src="./images/mac.jpeg" alt="Веб-сайт" width="370">
+                                <img srcset="
+                                images/mac-354.jpeg  354w,
+                                images/mac-370.jpeg  370w,
+                                images/mac-450.jpeg  450w,
+                                images/mac-708.jpeg  708w,
+                                images/mac-740.jpeg  740w,
+                                images/mac-900.jpeg  900w
+                                "
+                                src="images/mac-354.jpeg" alt="Веб-сайт" 
+                                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px">
                                 <div class="portfolio-thumb__text">
                                     <p class="portfolio-thumb__desc">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем функціоналу та сервісів.
@@ -164,7 +225,16 @@
                     <li class="portfolio__item">
                         <a href="" class="portfolio__project-link">
                             <div class="portfolio-thumb">
-                                <img src="./images/magazine.jpeg" alt="Дизайн" width="370">
+                                <img srcset="
+                                images/magaz-354.jpeg  354w,
+                                images/magaz-370.jpeg  370w,
+                                images/magaz-450.jpeg  450w,
+                                images/magaz-708.jpeg  708w,
+                                images/magaz-740.jpeg  740w,
+                                images/magaz-900.jpeg  900w
+                                "
+                                src="images/magaz-354.jpeg" alt="Дизайн"
+                                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px">
                                 <div class="portfolio-thumb__text">
                                     <p class="portfolio-thumb__desc">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем функціоналу та сервісів.
@@ -181,7 +251,16 @@
                     <li class="portfolio__item">
                         <a href="" class="portfolio__project-link">
                             <div class="portfolio-thumb">
-                                <img src="./images/label.jpeg" alt="Маркетинг" width="370">
+                                <img srcset="
+                                images/label-354.jpeg  354w,
+                                images/label-370.jpeg  370w,
+                                images/label-450.jpeg  450w,
+                                images/label-708.jpeg  708w,
+                                images/label-740.jpeg  740w,
+                                images/label-900.jpeg  900w
+                                "
+                                src="images/label-354.jpeg" alt="Маркетинг" 
+                                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px">
                                 <div class="portfolio-thumb__text">
                                     <p class="portfolio-thumb__desc">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем функціоналу та сервісів.
@@ -198,7 +277,16 @@
                     <li class="portfolio__item">
                         <a href="" class="portfolio__project-link">
                             <div class="portfolio-thumb">
-                                <img src="./images/laptop-hands.jpeg" alt="Додаток" width="370">
+                                <img srcset="
+                                images/lapt-354.jpeg  354w,
+                                images/lapt-370.jpeg  370w,
+                                images/lapt-450.jpeg  450w,
+                                images/lapt-708.jpeg  708w,
+                                images/lapt-740.jpeg  740w,
+                                images/lapt-900.jpeg  900w
+                                "
+                                src="images/lapt-354.jpeg" alt="Додаток" 
+                                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px">
                                 <div class="portfolio-thumb__text">
                                     <p class="portfolio-thumb__desc">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем функціоналу та сервісів.
@@ -219,9 +307,9 @@
         </section>
 
     </main>
-    <footer class="footer">
+    <footer class="footer section">
         <div class="container footer__container">
-            <div class="footer-box">
+            <div class="footer__item">
                 <a href="" class="logo-link logo-link--footer"><span class="logo-link__first">Web</span><span
                         class="logo-link__second logo-link__second--white">Studio</span></a>
                 <address class="address">
@@ -239,8 +327,8 @@
                     </ul>
                 </address>
             </div>
-            <div class="footer-links">
-                <p class="footer-links__title">приєднуйтесь</p>
+            <div class="footer__item">
+                <p class="footer__title">приєднуйтесь</p>
                 <ul class="list footer-icons">
                     <li class="footer-icons__item">
                         <a href="" class="footer-icon__link" target="_blank" rel="noopener noreferrer">
@@ -273,24 +361,76 @@
                 </ul>
             </div>
     
-            <form class="mailing-form">
-                <p class="footer-form__title">Підпишіться на розсилку</p>
-                <div class="form-box">
-                    <input type="text" class="mail-input" name="mail" placeholder="E-mail" />
-                    <button class="mailing-btn button">Підписатися
+            <div class="footer__item">
+                <p class="form-title">Підпишіться на розсилку</p>
+                <form class="subscribe">
+                    <lavel class="subscribe__label">
+                        <input type="text" class="subscribe__field" name="mail" placeholder="E-mail" />
+                    </lavel>
+                    <button class="subscribe__btn button">Підписатися
                         <svg class="icon-mailing" width="24" height="24">
                             <use href="./images/sprite.svg#icon-mailig"></use>
                         </svg>
                     </button>
-                </div>
+                </form>
     
-            </form>
-    
-        </div>
-    
+            </div>
+
     
     
     </footer>
+    <!-- Mobile-menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button type="button" class="menu-toggle js-close-menu">
+            <svg class="menu-toggle__icon" aria-label="Закриття мобільного меню" width="40" height="40">
+                <use class="menu-toggle__close" href="./images/sprite.svg#icon-close"></use>
+            </svg>
+    
+        </button>
+        <div class="menu-container__wrap">
+            <ul class="mob-menu list">
+                <li class="mob-menu__item">
+                    <a href="./index.html" class="mob-menu__link mob-menu__link--current">Студія</a>
+                </li>
+                <li class="mob-menu__item">
+                    <a href="./portfolio.html" class="mob-menu__link">Портфоліо</a>
+                </li>
+                <li class="mob-menu__item"><a href="#" class="mob-menu__link">Контакти</a></li>
+            </ul>
+            <ul class="mob-contacts list">
+                <li class="mob-contacts__item">
+                    <a href="mailto:info@devstudio.com" class="mob-contact__link">info@devstudio.com</a>
+                </li>
+                <li class="mob-contacts__item">
+                    <a href="tel:+380961111111" class="mob-contact__link">+38 096 111 11 11</a>
+                </li>
+            </ul>
+            <ul class="mob-socials list">
+                <li class="mob-socials__item">
+                    <a href="#" class="mob-socials__link">Instagram</a>
+                </li>
+                <li class="mob-socials__item">
+                    <a href="#" class="mob-socials__link">Twitter</a>
+                </li>
+                <li class="mob-socials__item">
+                    <a href="#" class="mob-socials__link">Facebook</a>
+                </li>
+                <li class="mob-social__item">
+                    <a href="#" class="mob-socials__link">Linkedln</a>
+                </li>
+            </ul>
+    
+            </ul>
+    
+        </div>
+    </div>
+    </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous">
+        </script>
+    
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>
