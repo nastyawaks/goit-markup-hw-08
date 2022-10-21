@@ -914,8 +914,8 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer__item:not(:last-child) {
-    margin-right: 70px;
+  .footer__item:not(:first-child) {
+    margin-left: auto;
   }
 }
 
