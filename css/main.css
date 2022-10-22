@@ -28,8 +28,6 @@ body {
 
 img {
   display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .container {
@@ -306,7 +304,7 @@ img {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-768.jpeg);
   }
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-768@2x.jpeg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-768@2x.jpeg);
@@ -318,7 +316,7 @@ img {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-1600.jpeg);
   }
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-1600@2x.jpeg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-1600@2x.jpeg);
@@ -423,6 +421,12 @@ img {
   font-size: 14px;
   line-height: 1.2;
   text-transform: uppercase;
+}
+@media screen and (max-width: 480px) {
+  .features__title,
+.team-card__title {
+    text-align: center;
+  }
 }
 
 .about {
@@ -1250,6 +1254,8 @@ img {
   border: none;
   border-radius: 50%;
   outline: none;
+}
+.menu-container .menu-toggle {
   position: absolute;
   top: 10px;
   right: 15px;
@@ -1306,6 +1312,11 @@ img {
           flex-direction: column;
   gap: 64px;
 }
+@media screen and (max-width: 480px) {
+  .menu-container__wrap {
+    gap: 10vw;
+  }
+}
 
 .mob-menu {
   display: -webkit-box;
@@ -1338,6 +1349,11 @@ img {
 .mob-menu__link--current {
   color: var(--link-color);
 }
+@media screen and (max-width: 480px) {
+  .mob-menu__link {
+    font-size: 34px;
+  }
+}
 
 .mob-contacts {
   display: -webkit-box;
@@ -1362,8 +1378,16 @@ img {
   -webkit-transition: color var(--animation-time) var(--animation-cubic);
   transition: color var(--animation-time) var(--animation-cubic);
 }
+.mob-contact__link--mail {
+  font-size: 24px;
+}
 .mob-contact__link:hover, .mob-contact__link:focus {
   color: var(--link-color);
+}
+@media screen and (max-width: 480px) {
+  .mob-contact__link {
+    font-size: 30px;
+  }
 }
 
 .mob-socials {
@@ -1388,4 +1412,9 @@ img {
   letter-spacing: 0.02em;
   color: var(--link-color);
   text-decoration: none;
+}
+@media screen and (max-width: 480px) {
+  .mob-socials__link {
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=main.css.map */

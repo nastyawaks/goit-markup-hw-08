@@ -23,18 +23,13 @@
                     <span class="logo-link__first">Web</span><span>Studio</span>
                 </a>
 
-                <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                    <svg class="menu-toggle__icon" width="40" height="40">
-                        <use class="menu-toggle__menu" href="./images/sprite.svg#icon-menu"></use>
-                    </svg>
-                </button>
-
                 <ul class="menu list">
                     <li class="menu__item"><a href="./index.html" class="menu__link menu__link--current">Студія</a></li>
                     <li class="menu__item"><a href="./portfolio.html" class="menu__link">Портфоліо</a></li>
                     <li class="menu__item"><a href="" class="menu__link">Контакти</a></li>
                 </ul>
             </nav>
+
             <ul class="contacts list">
                 <li class="contacts__item">
                     <a href="mailto:info@devstudio.com" class="contacts__link">
@@ -50,6 +45,12 @@
                         </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
+
+            <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="menu-toggle__icon" width="40" height="40">
+                    <use class="menu-toggle__menu" href="./images/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
         </div>
     </header>
     <main>
@@ -119,19 +120,23 @@
                 <h2 class="section__title">Чим ми займаємося</h2>
                 <ul class="about list">
                     <li class="about__item">
-                        <img src="images/boxone.jpeg" alt="Дизайн" width="370">
+                        <img srcset="./images/dsk-app-370.jpg 1x, 
+                        ./images/dsk-app-740.jpg 2x"
+                        src="./images/dsk-app-370.jpg" alt="Дизайн" width="370">
                         <div class="about__overlay">
                             <p class="about__meta">Десктопні додатки</p>
                         </div>
                     </li>
                     <li class="about__item">
-                        <img src="images/boxtwo.jpeg" alt="Мобільні додатки " width="370">
+                        <img srcset="images/mob-dsng-370.jpg 1x, /images/mob-dsng-740.jpg 2x "
+                        src="images/mob-dsng-370.jpg " alt="Мобільні додатки " width="370">
                         <div class="about__overlay">
                             <p class="about__meta">Мобільні додатки</p>
                         </div>
                     </li>
                     <li class="about__item">
-                        <img src="images/boxthree.jpeg" alt="Дизайн чогось" width="370">
+                        <img srcset="images/design-370.jpg 1x, images/design-740.jpg 2x"
+                        src="images/design-370.jpg" alt="Дизайн чогось" width="370">
                         <div class="about__overlay">
                             <p class="about__meta">Дизайнерські рішення</p>
                         </div>
@@ -444,9 +449,9 @@
             <div class="footer__item">
                 <p class="form-title">Підпишіться на розсилку</p>
                 <form class="subscribe">
-                    <lavel class="subscribe__label">
+                    <label class="subscribe__label">
                         <input type="text" class="subscribe__field" name="mail" placeholder="E-mail" />
-                    </lavel>
+                    </label>
                     <button class="subscribe__btn button">Підписатися
                         <svg class="icon-mailing" width="24" height="24">
                             <use href="./images/sprite.svg#icon-mailig"></use>
@@ -535,12 +540,12 @@
                     <a href="./portfolio.html" class="mob-menu__link">Портфоліо</a>
                 </li>
                 <li class="mob-menu__item"><a href="#" class="mob-menu__link">Контакти</a></li>
-                </ul>
+            </ul>
                 <ul class="mob-contacts list">
-                    <li class="mob-contacts__item">
-                        <a href="mailto:info@devstudio.com" class="mob-contact__link">info@devstudio.com</a>
+                    <li class="mob-contacts__item --mail">
+                        <a href="mailto:info@devstudio.com" class="mob-contact__link  mob-contact__link--mail">info@devstudio.com</a>
                     </li>
-                    <li class="mob-contacts__item">
+                    <li class="mob-contacts__item ">
                         <a href="tel:+380961111111" class="mob-contact__link">+38 096 111 11 11</a>
                     </li>
                 </ul>
@@ -558,8 +563,7 @@
                         <a href="#" class="mob-socials__link">Linkedln</a>
                     </li>
                 </ul>
-
-            </ul>
+           
 
         </div>
 

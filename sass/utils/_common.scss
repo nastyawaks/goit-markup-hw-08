@@ -1,33 +1,31 @@
 body {
-    background-color: #ffffff;
-    color: var(--primary-text-color);
-    font-family: $font-body;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+  font-family: $font-body;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
 .list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-
 
 img {
   display: block;
-  max-width: 100%;
-  height: auto;
+  //   max-width: 100%;
+  //   height: auto;
 }
 
-
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 
-     @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) {
     width: 480px;
   }
 
@@ -40,15 +38,12 @@ img {
   }
 }
 
-
-
 .section {
-        padding: 60px 0;
+  padding: 60px 0;
 
-@media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     padding: 94px 0 94px;
-    
-}
+  }
 }
 
 // .section {
@@ -58,40 +53,37 @@ img {
 // }
 
 .section.no-padding {
-    padding-top: 0;
-    
+  padding-top: 0;
 
-    @media screen and (max-width: 1199px) {
-        display: none;
-    }
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .section__title {
-    margin-top: 0;
+  margin-top: 0;
 
-    color: var(--title-text-color);
+  color: var(--title-text-color);
 
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.2;
-    text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
 
-    @media screen and (min-width: 1200px) {
-        font-size: 36px;
-    }
-
-
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }
 
 .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
